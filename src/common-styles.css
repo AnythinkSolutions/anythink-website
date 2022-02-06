@@ -1,0 +1,87 @@
+.corner {
+  position: absolute;
+  width: 15px;
+  height: 1px;
+  background-color: #141414;
+  z-index: 1;
+}
+.corner:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 15px;
+  background-color: #141414;
+}
+.corner.corner-left-top, .corner.corner-left-top:after, .corner.corner-left-bottom, .corner.corner-left-bottom:after {
+  left: 0;
+}
+.corner.corner-left-top, .corner.corner-left-top:after, .corner.corner-right-top, .corner.corner-right-top:after {
+  top: 0;
+}
+.corner.corner-left-bottom, .corner.corner-left-bottom:after, .corner.corner-right-bottom, .corner.corner-right-bottom:after {
+  bottom: 0;
+}
+.corner.corner-right-top, .corner.corner-right-top:after, .corner.corner-right-bottom, .corner.corner-right-bottom:after {
+  right: 0;
+}
+
+.resume .resume-box-inner:nth-of-type(n + 3) {
+  margin-top: 50px;
+}
+@media only screen and (max-width: 767px) {
+  .resume .resume-box-inner:nth-of-type(n + 2) {
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .resume .resume-box {
+    margin-bottom: 0;
+  }
+}
+.resume .resume-box .item-resume-box {
+  padding-left: 20px;
+  padding-bottom: 50px;
+}
+@media only screen and (max-width: 991px) {
+  .resume .resume-box .item-resume-box {
+    padding-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .resume .resume-box .item-resume-box {
+    padding-bottom: 20px;
+  }
+}
+.resume .resume-box .item-resume-box:last-of-type {
+  padding-bottom: 0;
+}
+.resume .resume-box .item-resume-box:last-of-type:after {
+  display: none;
+}
+.resume .resume-box .item-resume-box:before, .resume .resume-box .item-resume-box:after {
+  content: "";
+  position: absolute;
+}
+.resume .resume-box .item-resume-box:before {
+  top: 5px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #303f9f;
+}
+.resume .resume-box .item-resume-box:after {
+  top: 20px;
+  left: 4px;
+  width: 1px;
+  height: calc(100% - 24px);
+  background-color: #BDBDBD;
+}
+.resume .resume-box .item-resume-box h6 {
+  max-width: 460px;
+  /* font-family: black; */
+  font-size: inherit;
+  line-height: 1.6;
+  /* font-weight: 500; */
+  /* color: black; */
+}

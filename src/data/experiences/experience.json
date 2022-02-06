@@ -1,0 +1,35 @@
+{
+  "headline": "Over 20 years building high-quality software",
+  "items": [
+    {
+      "category": "job",
+      "title": "Freelance Developer",
+      "company": "Anythink Solutions, Inc.",
+      "description": "Provide freelance development, architect, and fractional CTO services to business. "
+    },
+    {
+      "category": "job",
+      "title": "Co-Founder & CTO",
+      "company": "TermScout, Inc.",
+      "description": "Co-founded and served as CTO for a Colorado-based startup that delivered actionable, timely, and accurate information to BTB sales and marketing professionals."
+    },
+    {
+      "category": "job",
+      "title": "Principal Architect",
+      "company": "IP Commerce, Inc.",
+      "description": "As the sixth employee, I served as the Principal Architect at this venture-backed startup delivering software to the payments industry."
+    },
+    {
+      "category": "school",
+      "title": "M.S. Computer Information Systems - ABT",
+      "company": "Regis University",
+      "description": "Completed all coursework with a 4.0 GPA, did not complete final project due to professional obligations."
+    },
+    {
+      "category": "school",
+      "title": "B.A. Economics",
+      "company": "University of Colorado, Boulder",
+      "description": "Developed a strong foundation in logic and reasoning, behavioral science and financial and economic theory."
+    }
+  ]
+}

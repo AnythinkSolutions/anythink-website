@@ -1,0 +1,36 @@
+{
+  "name": "anythink-solutions-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Anythink Solutions Website",
+  "author": "Swift Agency",
+  "keywords": [
+    "freelance, development, software, front-end, javascript, react, angular, c#, .NET, contract"
+  ],
+  "dependencies": {
+    "@emotion/react": "latest",
+    "@emotion/server": "latest",
+    "@emotion/styled": "latest",
+    "@mui/icons-material": "^5.3.1",
+    "@mui/material": "latest",
+    "aos": "^2.3.4",
+    "gatsby": "latest",
+    "gatsby-plugin-react-helmet": "latest",
+    "gatsby-plugin-webfonts": "^2.2.1",
+    "gatsby-source-filesystem": "^4.6.0",
+    "gatsby-transformer-json": "^4.6.0",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-helmet": "latest"
+  },
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
+  },
+  "devDependencies": {
+    "@types/material-ui": "^0.21.12",
+    "@types/react": "^17.0.39"
+  }
+}
