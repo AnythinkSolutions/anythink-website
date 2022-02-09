@@ -16,6 +16,10 @@ module.exports = {
     'gatsby-plugin-top-layout',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-mui-emotion',
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    "gatsby-plugin-mdx",
     {
       resolve: `gatsby-plugin-webfonts`,
       options: {
@@ -44,6 +48,13 @@ module.exports = {
         name: `data`,
         path: `${__dirname}/src/data/`,
         ignore: [`**/\.*`], // ignore files starting with a dot
+      }  
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
       }  
     }
   ]  

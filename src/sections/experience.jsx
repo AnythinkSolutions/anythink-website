@@ -30,7 +30,7 @@ const ExperienceSection = () => {
   let itemKey = 0;
 
   return (
-    <Grid container>
+    <Grid container sx={{overflowX: 'hidden'}}>
       <Grid container direction="column" className="aos-init aos-animate" data-aos="fade" data-aos-delay="100">
         <Typography variant="h6" sx={{color: 'info.main', fontWeight: 200, textTransform: 'uppercase'}} gutterBottom>Experience &amp; Education</Typography>
         <Typography variant="h4" sx={{mb: 2}}>{dataNode.headline}</Typography>

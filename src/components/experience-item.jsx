@@ -7,7 +7,7 @@ const ItemBody = styled(Grid)(({theme}) => ({
   // padding: theme.spacing(2)
 }));
 
-const ServiceCardFlat = ({title, company, description}) => {
+const ExperienceItem = ({title, company, description}) => {
   return (
     <ItemBody container direction="column">
       <Typography gutterBottom variant="h6" color="secondary" sx={{fontWeight: 200, textTransform: 'uppercase', mt: '-2px', mb: 0}}>{title}</Typography>
@@ -19,4 +19,4 @@ const ServiceCardFlat = ({title, company, description}) => {
   );
 };
 
-export default ServiceCardFlat;
+export default ExperienceItem;

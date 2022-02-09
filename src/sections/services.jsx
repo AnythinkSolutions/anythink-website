@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Grid, Typography } from "@mui/material";
 import { useStaticQuery, graphql } from 'gatsby';
-import ServiceCard from "../components/service-card-flat";
+import ServiceCard from "../components/service-card";
 
 const ServicesSection = () => {
 

@@ -5,6 +5,7 @@ import Header from "../sections/header";
 import AboutSection from '../sections/about';
 import ServicesSection from "../sections/services";
 import ExperienceSection from "../sections/experience";
+import PortfolioSection from "../sections/portfolio";
 import "aos/dist/aos.css";
 import "../common-styles.css";
 import AOS from "aos";
@@ -38,6 +39,12 @@ export default function Index() {
         <Box id="experience"> {/* sx={{p: 4, backgroundColor: 'background.alternate'}} */}
           <ExperienceSection />
         </Box>
+        <SectionDivider />
+        <Box id="portfolio"> {/* sx={{p: 4, backgroundColor: 'background.alternate'}} */}
+          <PortfolioSection />
+        </Box>
+        <SectionDivider />
+        
       </Box>
     </Container>
   );

@@ -10,7 +10,7 @@ const CardBody = styled(Grid)(({theme}) => ({
   padding: theme.spacing(2)
 }));
 
-const ServiceCardFlat = ({title, description, iconPath}) => {
+const ServiceCard = ({title, description, iconPath}) => {
 
   const ServiceIcon = iconPath ? createSvgIcon(<path d={iconPath} />, "service-icon") : null;
   console.log("title: ", title, "iconPath: ", iconPath);
@@ -28,4 +28,4 @@ const ServiceCardFlat = ({title, description, iconPath}) => {
   );
 };
 
-export default ServiceCardFlat;
+export default ServiceCard;

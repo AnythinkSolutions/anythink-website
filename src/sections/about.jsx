@@ -2,7 +2,6 @@ import * as React from "react";
 import { Box, Stack, Grid, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import headshot from "../images/headshot.jpg";
-// import Link from "../components/Link";
 
 const HeroImage = styled("img")({
   maxHeight: 500,
