@@ -61,10 +61,10 @@ const PortfolioSection : React.FC = () => {
         <Typography variant="h4" sx={{mb: 2}}>Highlighting some of my recent work</Typography>
       </Grid>
       <Grid container spacing={3}>
-        {projectsWithImages.map(item => {
+        {projectsWithImages.map((item: any, index: number) => {
           return (
-            <Grid item md={4}>
-              <PortfolioItem key={item.id} {...item} />
+            <Grid key={item.id} item md={4} className="aos-init aos-animate" data-aos="fade-in" data-aos-delay={100 * index}>
+              <PortfolioItem {...item} />
             </Grid>
           );
         })}
