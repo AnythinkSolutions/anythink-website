@@ -14,7 +14,7 @@ const AboutSection = () => {
       <Grid item container direction="column" alignItems="center" sx={{mt: 6, mb: 4}}>
         <Typography variant="h3" component="h3" color="primary" sx={{fontWeight: 300}}>Brian Schwalm</Typography>
         <Typography variant="h3" component="h3" color="gray" sx={{fontWeight: 300}} className="aos-init" data-aos="fade">Anythink Solutions</Typography>
-        <Typography variant="h3" component="h3" color="gray" sx={{fontWeight: 300}} className="aos-init" data-aos="fade">Freelance Software Developer</Typography>
+        <Typography variant="h3" component="h3" color="gray" sx={{fontWeight: 300, textAlign: "center"}} className="aos-init text-center" data-aos="fade">Freelance Software Developer</Typography>
       </Grid>
 
       <Grid item md={2} sm={4}>
@@ -48,8 +48,8 @@ const AboutSection = () => {
             <Typography variant="h6" textAlign="right" sx={{mt: 4, color: 'info.main', fontWeight: 200, textTransform: 'uppercase'}} gutterBottom>Years Freelance</Typography>
             <Typography variant="h2">15</Typography>
 
-            <Typography variant="h6" textAlign="right" sx={{mt: 4, color: 'info.main', fontWeight: 200, textTransform: 'uppercase'}} gutterBottom>Satisfied Clients</Typography>
-            <Typography variant="h2">100%</Typography>
+            {/* <Typography variant="h6" textAlign="right" sx={{mt: 4, color: 'info.main', fontWeight: 200, textTransform: 'uppercase'}} gutterBottom>Satisfied Clients</Typography>
+            <Typography variant="h2">100%</Typography> */}
           </Stack>      
         </Box>
       </Grid>

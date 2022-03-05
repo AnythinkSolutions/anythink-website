@@ -3,9 +3,11 @@ import { Box, Container} from '@mui/material';
 import { styled } from "@mui/system";
 import Header from "../sections/header";
 import AboutSection from '../sections/about';
+import SkillsSection from "../sections/skills";
 import ServicesSection from "../sections/services";
 import ExperienceSection from "../sections/experience";
 import PortfolioSection from "../sections/portfolio";
+import ContactSection from "../sections/contact";
 import "aos/dist/aos.css";
 import "../common-styles.css";
 import AOS from "aos";
@@ -32,18 +34,30 @@ export default function Index() {
           <AboutSection/>
         </Box>
         <SectionDivider />
+        
+        <Box id="skills" sx={{p: 4}}>
+          <SkillsSection />
+        </Box>
+        <SectionDivider />
+
         <Box id="services" sx={{p: 4}}>
           <ServicesSection />
         </Box>
         <SectionDivider />
-        <Box id="experience"> {/* sx={{p: 4, backgroundColor: 'background.alternate'}} */}
+        
+        <Box id="experience">
           <ExperienceSection />
         </Box>
         <SectionDivider />
-        <Box id="portfolio"> {/* sx={{p: 4, backgroundColor: 'background.alternate'}} */}
+
+        <Box id="portfolio">
           <PortfolioSection />
         </Box>
         <SectionDivider />
+
+        <Box id="contact">
+          <ContactSection />
+        </Box>
         
       </Box>
     </Container>

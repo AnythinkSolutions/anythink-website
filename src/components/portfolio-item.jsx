@@ -8,17 +8,29 @@ const ItemBody = styled(Grid)(({theme}) => ({
 }));
 
 const ZoomImageBox = styled(Box)(() => ({
+  borderRadius: 5,
+  transition: "box-shadow 0.5s ease-in-out !important",      
+  boxShadow: "-4px 4px 29px -4px rgba(0,0,0,0.15)",
   overflow: "hidden",
   "& img": {
     filter: 'grayscale(100%)',  
     transition: "transform 1.25s ease-in-out, filter 0.5s ease-in-out !important",      
     transformOrigin: "0 0",    
   },
-  "&:hover img": {
-    transform: "scale(1.1)",
-    filter: "grayscale(0)",
-    filter: 'unset',
+  "&:hover": {
+    boxShadow: "-4px 4px 29px -4px rgba(0,0,0,0.55)",
+  
+    "& img": {
+      transform: "scale(1.1)",
+      filter: "grayscale(0)",
+      filter: 'unset',  
+    }
   }
+  // "&:hover img": {
+  //   transform: "scale(1.1)",
+  //   filter: "grayscale(0)",
+  //   filter: 'unset',
+  // }
 }));
 
 const PortfolioItem = ({name, description, gImageData}) => {
