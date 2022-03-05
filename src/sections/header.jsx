@@ -24,7 +24,7 @@ export default function Header() {
           <Stack direction="row" spacing={3}>
             <Button component={Link}  to="#portfolio">Portfolio</Button>
             <Button component={Link}  to="#testimonials">Testimonials</Button>
-            <Button component={Link}  to="/contact">Contact</Button>
+            <Button component={Link}  to="#contact">Contact</Button>
           </Stack>
         </Box>
       </Grid>
