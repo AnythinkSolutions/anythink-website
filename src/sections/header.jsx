@@ -22,8 +22,9 @@ export default function Header() {
       <Grid item lg={4} sm={6} container justifyContent="flex-end">
         <Box>
           <Stack direction="row" spacing={3}>
+            <Button component={Link}  to="#skills">Skills</Button>
             <Button component={Link}  to="#portfolio">Portfolio</Button>
-            <Button component={Link}  to="#testimonials">Testimonials</Button>
+            {/* <Button component={Link}  to="#testimonials">Testimonials</Button> */}
             <Button component={Link}  to="#contact">Contact</Button>
           </Stack>
         </Box>

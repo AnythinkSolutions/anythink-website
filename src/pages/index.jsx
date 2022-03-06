@@ -35,16 +35,16 @@ export default function Index() {
         </Box>
         <SectionDivider />
         
-        <Box id="skills" sx={{p: 4}}>
-          <SkillsSection />
-        </Box>
-        <SectionDivider />
-
         <Box id="services" sx={{p: 4}}>
           <ServicesSection />
         </Box>
         <SectionDivider />
         
+        <Box id="skills" sx={{p: 4}}>
+          <SkillsSection />
+        </Box>
+        <SectionDivider />
+
         <Box id="experience">
           <ExperienceSection />
         </Box>

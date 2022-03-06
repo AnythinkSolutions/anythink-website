@@ -48,6 +48,10 @@
           }
         ]
       }
-    ]
+    ],
+    "rewrites": [{
+      "source": "/api/sendEmail",
+      "function": "sendEmail"
+    }]
   }
 }

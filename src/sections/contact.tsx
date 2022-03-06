@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Button, Grid, Typography, TextField } from "@mui/material";
 import { styled } from "@mui/system";
 import { StaticImage } from "gatsby-plugin-image";
+const CONTACT_URL = "/api/sendEmail"; //https://us-central1-anythink-website.cloudfunctions.net/sendEmail";
 
 const ContactForm = styled("form")(({theme}) => ({
   marginTop: theme.spacing(4),
@@ -17,6 +18,34 @@ const ContactForm = styled("form")(({theme}) => ({
 
 
 const ContactSection = () => {
+
+  const [formState, setFormState] = React.useState({name: "", email: "", phone: "", message: ""});
+
+  function onFormChange(event){
+    const target = event.target;
+    setFormState({
+      ...formState,
+      [target.id]: target.value
+    });    
+  }
+
+  async function sendEmail(event){
+    console.log("props submitted: ", formState);
+    
+    const request = new Request(CONTACT_URL, {
+      method: 'POST',
+      headers: {
+        'Accept'        : 'application/json', 
+        'Content-Type'  : 'application/json'
+      },
+      body: JSON.stringify({data: formState})
+    });
+    const result = await fetch(request);
+    console.log("contact request result: ", result);
+
+    event.stopPropagation();
+  }
+
   return (
     <Box sx={{paddingBottom: 6, position: "relative"}}>
       <Grid container>
@@ -27,18 +56,18 @@ const ContactSection = () => {
         <Grid item container>
           <Grid item md={6} sm={12}>
             <div  className="aos-init" data-aos="fade" data-aos-duration={1000}>
-              <ContactForm id="contact-form">
+              <ContactForm id="contact-form" onSubmit={sendEmail}>
                 <div className="corner corner-left-top"></div>
                 <div className="corner corner-right-top"></div>
                 <div className="corner corner-right-bottom"></div>
                 <div className="corner corner-left-bottom"></div>
                 <Typography variant="h4" sx={{mb: 2}}>Tell me about your project</Typography>
                 <Typography variant="body1" sx={{mb: 2}}>Whether you're in the early stages, or ready to hand over a requirements doc, I'm happy to talk. The more information you provide, the more prepared I'll be.</Typography>
-                <TextField id="name" variant="standard" label="Your name*" fullWidth sx={{marginBottom: 2}} />
-                <TextField id="email" variant="standard" label="Your email address*" fullWidth sx={{marginBottom: 2}} />
-                <TextField id="phone" variant="standard" label="Your phone number" fullWidth sx={{marginBottom: 2}} />
-                <TextField id="message" variant="standard" label="Your message" multiline rows={4} fullWidth sx={{marginBottom: 2}} />
-                <Button type="submit" variant="outlined" sx={{position: "absolute", bottom: 15, right: 32}}>Send Message</Button>
+                <TextField id="name" value={formState.name} onChange={onFormChange} variant="standard" label="Your name*" fullWidth sx={{marginBottom: 2}} />
+                <TextField id="email" value={formState.email} onChange={onFormChange} type="email" variant="standard" label="Your email address*" fullWidth sx={{marginBottom: 2}} />
+                <TextField id="phone" value={formState.phone} onChange={onFormChange} variant="standard" label="Your phone number" fullWidth sx={{marginBottom: 2}} />
+                <TextField id="message" value={formState.message} onChange={onFormChange} variant="standard" label="Your message" multiline rows={4} fullWidth sx={{marginBottom: 2}} />
+                <Button type="button" onClick={sendEmail} variant="outlined" sx={{position: "absolute", bottom: 15, right: 32}}>Send Message</Button>
               </ContactForm>  
             </div>
           </Grid>
