@@ -22,15 +22,9 @@ const ZoomImageBox = styled(Box)(() => ({
   
     "& img": {
       transform: "scale(1.1)",
-      filter: "grayscale(0)",
       filter: 'unset',  
     }
   }
-  // "&:hover img": {
-  //   transform: "scale(1.1)",
-  //   filter: "grayscale(0)",
-  //   filter: 'unset',
-  // }
 }));
 
 const PortfolioItem = ({name, description, gImageData}) => {

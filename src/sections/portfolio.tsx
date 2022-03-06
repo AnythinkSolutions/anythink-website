@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Grid, Stack, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import { useStaticQuery, graphql } from 'gatsby';
 import PortfolioItem from "../components/portfolio-item";
 
@@ -35,10 +35,10 @@ const PortfolioSection : React.FC = () => {
     }
   `);  
 
-  console.log("portfolio data: ", data);
+  // console.log("portfolio data: ", data);
   const projects = data.allPortfolioJson.edges;
   const images = data.allImageSharp.edges as any[];
-  console.log("portfolio images: ", images);
+  // console.log("portfolio images: ", images);
 
   const projectsWithImages = projects.reduce((result, project) => {
     const imageData = images.find(img => img.node.fluid.originalName === project.node.image);
@@ -52,7 +52,7 @@ const PortfolioSection : React.FC = () => {
     return result;
   }, []);
 
-  console.log("Projects with Image Data: ", projectsWithImages);
+  // console.log("Projects with Image Data: ", projectsWithImages);
 
   return (
     <Grid container>

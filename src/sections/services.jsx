@@ -25,7 +25,7 @@ const ServicesSection = () => {
   `);
 
   const servicesData = data.allServicesJson.edges[0].node;
-  console.log("services data: ", servicesData);
+  // console.log("services data: ", servicesData);
   
   return (
     <Grid container>

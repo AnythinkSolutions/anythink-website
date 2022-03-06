@@ -13,7 +13,7 @@ const CardBody = styled(Grid)(({theme}) => ({
 const ServiceCard = ({title, description, iconPath}) => {
 
   const ServiceIcon = iconPath ? createSvgIcon(<path d={iconPath} />, "service-icon") : null;
-  console.log("title: ", title, "iconPath: ", iconPath);
+  // console.log("title: ", title, "iconPath: ", iconPath);
 
   return (
     <CardBody container direction="column">

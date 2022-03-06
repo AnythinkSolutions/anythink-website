@@ -3,11 +3,12 @@ module.exports = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-cara/gatsby-config.js
-    title: `Anythink Solutions`,
+    title: `Freelance Software Development from Anythink Solutions`,
     siteUrl: `https://www.anythinksolutions.com`,
     siteTitleAlt: `Anythink Solutions - Freelance Software Development`,
     siteHeadline: `Anythink Solutions - Software Development Services`,
-    siteDescription: `Freelance software development, front-end development, React, Angular`,
+    siteDescription: "Anythink Solutions offers full stack software development solutions including React, Angular and .NET",
+    siteKeywords: ["software development", "freelance", "react", "angular", "gatsby", ".net", "react native"],
     siteLanguage: `en`,
     siteImage: `/banner.jpg`,
     author: `Swift Agency`,
@@ -27,10 +28,6 @@ module.exports = {
           google: [
             {
               family: `Nunito Sans`,
-              variants: [`200`, `300`, `400`, `500`],
-            },
-            {
-              family: `Montserrat`,
               variants: [`200`, `300`, `400`, `500`],
             },
             {

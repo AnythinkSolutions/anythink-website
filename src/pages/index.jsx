@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Box, Container} from '@mui/material';
 import { styled } from "@mui/system";
+import Seo from "../components/seo";
 import Header from "../sections/header";
 import AboutSection from '../sections/about';
 import SkillsSection from "../sections/skills";
@@ -26,8 +27,9 @@ export default function Index() {
 
   return (
     <Container maxWidth={false}>
+      <Seo />
       <Box>
-        <Box sx={{py: 4}}>
+        <Box sx={{py: 4}} className="aos-init" data-aos="fade-down" data-aos-delay="500">
           <Header />
         </Box>
         <Box id="about" sx={{p: 4}} className="aos-init" data-aos="fade-in">

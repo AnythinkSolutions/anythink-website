@@ -21,7 +21,6 @@ const theme = createTheme({
     fontFamily: [
         'Nunito Sans',
         'Roboto',
-        'Montserrat',
         'sans-serif'
     ].join(','),
   },

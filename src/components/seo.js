@@ -1,0 +1,70 @@
+import React from "react";
+import { Helmet } from "react-helmet";
+import { useStaticQuery, graphql } from "gatsby";
+
+function SEO({ description, lang, meta }) {
+
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+            siteHeadline
+            siteDescription
+            siteKeywords
+            author
+            siteKeywords
+            siteUrl
+            siteLanguage
+          }
+        }
+      }
+    `
+  );
+
+  const metaDescription = description || site.siteMetadata.siteDescription
+  const language = site.siteMetadata.siteLanguage || lang;
+
+  return (
+    <Helmet
+      title={site.siteMetadata.title}
+      htmlAttributes={{language,}}
+      meta={[
+        {
+          name: `description`,
+          content: metaDescription,
+        },
+        {
+          name: "keywords",
+          content: site.siteMetadata.siteKeywords.join(","),
+        },
+      ]}
+    >
+      <script type="application/ld+json">
+        {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "url": "https://www.anythinksolutions.com",
+              "name": "Anythink Solutions",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+1-303-817-2927",
+                "email": "info@anythinksolutions.com",
+                "contactType": "Information"
+              }
+            }
+          `}
+      </script>
+    </Helmet>
+  )
+}
+
+SEO.defaultProps = {
+  lang: `en`,
+  meta: [],
+  description: ``,
+}
+
+export default SEO;

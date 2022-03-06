@@ -16,7 +16,9 @@ const SkillsSection = () => {
         <Grid container sx={{marginBottom: 3}}>
           <Grid item sm={0} md={2}></Grid>
           <Grid item sm={12} md={8} container justifyContent="center" >
-            <Typography sx={{fontWeight: 300}} gutterBottom>Below is a small sample of the technologies I work with on a regular basis. If there's one you're looking for but don't see, please ask. After more than 20 years building software, there's a good chance I've encountered it.</Typography>
+            <Typography sx={{fontWeight: 300, textAlign: "center"}} gutterBottom>
+              Below is a small sample of the technologies I work with on a regular basis. If there's one you're looking for but don't see, please ask. After more than 20 years building software, there's a good chance I've encountered it.
+            </Typography>
           </Grid>
         </Grid>
       </Grid>

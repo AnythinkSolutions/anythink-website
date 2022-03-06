@@ -11,7 +11,7 @@ const nodemailer = require('nodemailer');
 // });
 
 //TODO: when this cloud function is already deployed, change the origin to 'https://your-deployed-app-url
-const cors = require('cors')({ origin: true });
+// const cors = require('cors')({ origin: true });
 // const cors = require('cors')({origin: 'https://anythink-website.web.app'});
 
 admin.initializeApp();
@@ -36,7 +36,7 @@ exports.sendEmail = functions.https.onRequest((req, res) => {
   // Allows GETs from any origin with the Content-Type header
   // and caches preflight response for 3600s
 
-  res.set('Access-Control-Allow-Origin', '*');
+  // res.set('Access-Control-Allow-Origin', '*');
 
   // if (req.method === 'OPTIONS') {
   //   // Send response to OPTIONS requests
@@ -50,7 +50,7 @@ exports.sendEmail = functions.https.onRequest((req, res) => {
   console.log('data: ', req.body.data);
   console.log('email address: ', req.body.data.email);
   //enable CORS using the `cors` express middleware.
-  cors(req, res, () => {
+  // cors(req, res, () => {
     //get contact form data from the req and then assigned it to variables
     const email = req.body.data.email;
     const name = req.body.data.name;
@@ -85,5 +85,5 @@ exports.sendEmail = functions.https.onRequest((req, res) => {
         },
       });
     });
-  });
+  // });
 });
