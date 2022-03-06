@@ -13,7 +13,7 @@ const AboutSection = () => {
     <Grid container>
       <Grid item container direction="column" alignItems="center" sx={{mt: 6, mb: 4}}>
         <Typography variant="h3" component="h3" color="primary" sx={{fontWeight: 300}}>Brian Schwalm</Typography>
-        <Typography variant="h3" component="h3" color="gray" sx={{fontWeight: 300}} className="aos-init" data-aos="fade">Anythink Solutions</Typography>
+        {/* <Typography variant="h3" component="h3" color="gray" sx={{fontWeight: 300}} className="aos-init" data-aos="fade">Anythink Solutions</Typography> */}
         <Typography variant="h3" component="h3" color="gray" sx={{fontWeight: 300, textAlign: "center"}} className="aos-init text-center" data-aos="fade">Freelance Software Developer</Typography>
       </Grid>
 
@@ -34,7 +34,7 @@ const AboutSection = () => {
       <Grid item md={8} sm={4} container justifyContent="center">
         <Box sx={{p: 2, borderRadius: 60, border: '1px solid lightgray'}}>
           <Box sx={{borderRadius: 60, border: '1px solid lightgray', overflow: 'hidden', lineHeight: 0}}>
-            <HeroImage src={headshot} alt="headshot" sx={{maxHeight: '500px'}}/>
+            <HeroImage src={headshot} alt="Brian Schwalm headshot" sx={{maxHeight: '500px'}}/>
           </Box>
         </Box>
       </Grid>

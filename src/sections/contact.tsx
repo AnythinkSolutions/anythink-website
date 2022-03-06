@@ -164,12 +164,12 @@ const ContactSection = () => {
               <Typography variant="h5">My Socials</Typography>
               <Tooltip title="LinkedIn">
                 <a href="https://linkedin.com/in/brianschwalm" target="_blank">
-                  <StaticImage src="../images/logos/linkedin.svg" alt="LinkedIn" height={36} width={36}/>
+                  <StaticImage src="../images/logos/linkedin.svg" alt="LinkedIn Contact Info" height={36} width={36}/>
                 </a>
               </Tooltip>
               <Tooltip title="The Roaming Coder">
                 <a href="https://www.theroamingcoder.com" target="_blank">
-                  <StaticImage src="../images/logos/roaming-coder.png" alt="The Roaming Coder" height={36} width={36}/>
+                  <StaticImage src="../images/logos/roaming-coder.png" alt="The Roaming Coder website" height={36} width={36}/>
                 </a>
               </Tooltip>
             </Grid>

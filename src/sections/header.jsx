@@ -1,6 +1,7 @@
 import * as React from "react";
-import { Button, Box, Stack, Grid } from "@mui/material";
+import { Button, Box, Stack, Typography, Grid } from "@mui/material";
 import Link from "../components/Link";
+import { StaticImage } from "gatsby-plugin-image";
 
 export default function Header() {
   return (
@@ -15,8 +16,11 @@ export default function Header() {
         </Box>
       </Grid>
 
-      <Grid item lg={4}>
-
+      <Grid item md={4} container justifyContent="center">
+        <Box sx={{marginTop: -2, textAlign: "center"}}>
+          <StaticImage src="../images/favicon.png" height="36" alt="Anythink Solutions Logo" />
+          <Typography variant="h5" component="h5" color="gray" sx={{fontWeight: 300}} className="aos-init" data-aos="fade">Anythink Solutions</Typography>
+        </Box>
       </Grid>
 
       <Grid item lg={4} sm={6} container justifyContent="flex-end">

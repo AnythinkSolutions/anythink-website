@@ -22,6 +22,12 @@ module.exports = {
     'gatsby-transformer-sharp',
     "gatsby-plugin-mdx",
     {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'src/images/favicon.svg',
+      },
+    },
+    {
       resolve: `gatsby-plugin-webfonts`,
       options: {
         fonts: {
