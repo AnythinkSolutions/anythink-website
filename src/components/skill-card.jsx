@@ -42,7 +42,7 @@ const SkillCard = ({title, delay, textLeftAdjust, children}) => {
   const delayValue = delay * 100;
 
   return (
-    <Grid item md={3} sm={4} lg={2}  className="aos-init aos-animate" data-aos="fade-left" data-aos-delay={delayValue} data-aos-duration={750}>
+    <Grid item md={2} sm={3} xs={6}  className="aos-init aos-animate" data-aos="fade-left" data-aos-delay={delayValue} data-aos-duration={750}>
       <SkillBody>
         <Grid container direction="column" alignItems="center" sx={{marginTop: "-2em"}}>
           {children}

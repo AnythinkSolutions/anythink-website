@@ -5,6 +5,9 @@ import { GatsbyImage } from "gatsby-plugin-image";
 
 const ItemBody = styled(Grid)(({theme}) => ({
   position: "relative",
+  [theme.breakpoints.down("sm")]: {
+    marginBottom: theme.spacing(4),
+  }
 }));
 
 const ZoomImageBox = styled(Box)(() => ({
@@ -30,7 +33,7 @@ const ZoomImageBox = styled(Box)(() => ({
 const PortfolioItem = ({name, description, gImageData}) => {
   return (
     <ItemBody container direction="column">
-      <ZoomImageBox sx={{mb: 4}}>
+      <ZoomImageBox mb={{sm: 4, xs: 1}}>
         <GatsbyImage image={gImageData} alt={name}/>
       </ZoomImageBox>
       <Typography gutterBottom variant="h6" color="secondary" sx={{fontWeight: 200, textTransform: 'uppercase', mt: '-2px', mb: 0}}>{name}</Typography>

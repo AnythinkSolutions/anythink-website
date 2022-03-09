@@ -29,7 +29,7 @@ export default function Index() {
     <Container maxWidth={false}>
       <Seo />
       <Box>
-        <Box sx={{py: 4}} className="aos-init" data-aos="fade-down" data-aos-delay="750">
+        <Box py={{sm: 4, xs: 1}} className="aos-init" data-aos="fade-down" data-aos-delay="750">
           <Header />
         </Box>
         <Box id="about" sx={{p: 4}} className="aos-init" data-aos="fade-in">

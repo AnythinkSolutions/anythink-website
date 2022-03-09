@@ -167,11 +167,11 @@ const ContactSection = () => {
                   <StaticImage src="../images/logos/linkedin.svg" alt="LinkedIn Contact Info" height={36} width={36}/>
                 </a>
               </Tooltip>
-              <Tooltip title="The Roaming Coder">
+              {/* <Tooltip title="The Roaming Coder">
                 <a href="https://www.theroamingcoder.com" target="_blank">
                   <StaticImage src="../images/logos/roaming-coder.png" alt="The Roaming Coder website" height={36} width={36}/>
                 </a>
-              </Tooltip>
+              </Tooltip> */}
             </Grid>
           </Grid>
         </Grid>

@@ -8,7 +8,7 @@ module.exports = {
     siteTitleAlt: `Anythink Solutions - Freelance Software Development`,
     siteHeadline: `Anythink Solutions - Software Development Services`,
     siteDescription: "Anythink Solutions offers full stack software development solutions including React, Angular and .NET",
-    siteKeywords: ["software development", "freelance", "react", "angular", "gatsby", ".net", "react native"],
+    siteKeywords: ["software development", "freelance", "react", "angular", "gatsby", ".net", "react native", "brian schwalm"],
     siteLanguage: `en`,
     siteImage: `/banner.jpg`,
     author: `Swift Agency`,

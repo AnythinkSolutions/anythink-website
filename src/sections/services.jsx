@@ -29,15 +29,15 @@ const ServicesSection = () => {
   
   return (
     <Grid container>
-      <Grid item md={4} container direction="column" className="aos-init aos-animate" data-aos="fade" data-aos-delay="100">
+      <Grid item md={4} sm={12} container direction="column" className="aos-init aos-animate" data-aos="fade" data-aos-delay="100">
         <Typography variant="h6" sx={{color: 'info.main', fontWeight: 200, textTransform: 'uppercase'}} gutterBottom>Services</Typography>
         <Typography variant="h4" sx={{mb: 2}}>{servicesData.headline}</Typography>
         <Typography variant="body">{servicesData.subhead}</Typography>
       </Grid>
 
-      <Grid item md={8} container>
+      <Grid item md={8} sm={12} container>
 
-        <Grid item md={6} container direction="column" sx={{p: 4}} rowGap={4} alignItems="center">
+        <Grid item sm={6} xs={12} container direction="column" p={{sm: 4, xs: 2}} rowGap={{sm: 4, xs: 2}} alignItems="center" pb={{xs: 1}}>
           <Grid item className="aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
             <ServiceCard {...servicesData.items[0]} />
           </Grid>
@@ -46,7 +46,7 @@ const ServicesSection = () => {
           </Grid>
         </Grid>
 
-        <Grid item md={6} container sx={{mt: 6, p: 4}} direction="column" rowGap={4} alignItems="center">
+        <Grid item sm={6} xs={12} container mt={{sm: 6, xs: 0}} p={{sm: 4, xs: 2}} direction="column" rowGap={{sm: 4, xs: 2}} alignItems="center" pt={{xs: 1}}>
           <Grid item className="aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
             <ServiceCard {...servicesData.items[2]} />
           </Grid>

@@ -7,7 +7,11 @@ const CardBody = styled(Grid)(({theme}) => ({
   width: 300,
   position: "relative",
   backgroundColor: theme.palette.grey[200],
-  padding: theme.spacing(2)
+  padding: theme.spacing(2),
+  [theme.breakpoints.down("sm")]: {
+    width: "100%",
+    height: "auto",
+  }
 }));
 
 const ServiceCard = ({title, description, iconPath}) => {
