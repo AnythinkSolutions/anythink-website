@@ -23,7 +23,7 @@ export default function Header() {
         </Box>
       </Grid>
 
-      <Grid item sm={4} xs={12} container justifyContent={{md: "flex-end", xs: "center"}} order={{sm: 3, xs: 2}} display={{sm: "unset", xs: "none"}}>
+      <Grid item sm={4} xs={12} container justifyContent={{md: "flex-end", xs: "center"}} order={{sm: 3, xs: 2}} display={{sm: "flex", xs: "none"}}>
         <Box>
           <Stack direction="row" spacing={3}>
             <Button component={Link}  to="#skills">Skills</Button>
