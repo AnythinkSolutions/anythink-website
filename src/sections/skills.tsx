@@ -45,8 +45,9 @@ const SkillsSection = () => {
           <StaticImage src="../images/logos/react.svg" alt="react native" height={imgHeight} objectFit="contain" width={imgWidth} />
         </SkillCard>
         
-        <SkillCard title="Node" delay={5}>
-          <StaticImage src="../images/logos/node.svg" alt="node" height={imgHeight} objectFit="contain" width={imgWidth} />
+        <SkillCard title="Next.js" delay={5}>
+          {/* <StaticImage src="../images/logos/node.svg" alt="node" height={imgHeight} objectFit="contain" width={imgWidth} /> */}
+          <StaticImage src="../images/logos/next-js.svg" alt="Next.js" height={imgHeight} objectFit="contain" width={imgWidth} />
         </SkillCard>
 
         <SkillCard title=".NET Core" delay={6}>

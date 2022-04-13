@@ -5,6 +5,7 @@ import { styled } from "@mui/system";
 const CardBody = styled(Grid)(({theme}) => ({
   height: 200,
   width: 300,
+  flexWrap: "nowrap",
   position: "relative",
   backgroundColor: theme.palette.grey[200],
   padding: theme.spacing(2),

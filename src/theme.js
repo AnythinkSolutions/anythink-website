@@ -18,6 +18,7 @@ const theme = createTheme({
     }
   },
   typography: {
+    // fontSize: 15,
     fontFamily: [
         'Nunito Sans',
         'Roboto',
