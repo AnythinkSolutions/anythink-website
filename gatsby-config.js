@@ -3,12 +3,12 @@ module.exports = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-cara/gatsby-config.js
-    title: `Freelance Software Development from Anythink Solutions`,
+    title: `Freelance Architecture & Development from Anythink Solutions`,
     siteUrl: `https://www.anythinksolutions.com`,
-    siteTitleAlt: `Anythink Solutions - Freelance Software Development`,
-    siteHeadline: `Anythink Solutions - Software Development Services`,
-    siteDescription: "Anythink Solutions offers full stack software development solutions including React, Angular and .NET",
-    siteKeywords: ["software development", "freelance", "react", "angular", "gatsby", ".net", "react native", "brian schwalm"],
+    siteTitleAlt: `Anythink Solutions - Freelance Software Architecture & Development`,
+    siteHeadline: `Anythink Solutions - Software Architecture & Development Services`,
+    siteDescription: "Anythink Solutions offers software architecture, full stack development and fractional CTO services.",
+    siteKeywords: ["software architecture", "cloud architecture", "software development", "software engineering", "freelance", "react", "angular", "nextjs", ".net", "react native", "brian schwalm"],
     siteLanguage: `en`,
     siteImage: `/banner.jpg`,
     author: `Swift Agency`,
