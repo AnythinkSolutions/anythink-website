@@ -37,9 +37,9 @@ const SkillsSection = () => {
           <StaticImage src="../images/logos/typescript.svg" alt="typescript" height={imgHeight} objectFit="contain" width={imgWidth} />
         </SkillCard>
 
-        <SkillCard title="Gatsby" delay={3}>
+        {/* <SkillCard title="Gatsby" delay={3}>
           <StaticImage src="../images/logos/gatsby.svg" alt="gatsby" height={imgHeight} objectFit="contain" width={imgWidth} />
-        </SkillCard>
+        </SkillCard> */}
 
         <SkillCard title="React Native" delay={4}>
           <StaticImage src="../images/logos/react.svg" alt="react native" height={imgHeight} objectFit="contain" width={imgWidth} />
@@ -58,12 +58,12 @@ const SkillsSection = () => {
           <StaticImage src="../images/logos/sql-server.svg" alt="SQL Server" height={imgHeight} objectFit="contain" width={imgWidth} />
         </SkillCard>
 
-        <SkillCard title="Firebase" delay={8}>
-          <StaticImage src="../images/logos/firebase.svg" alt="Firebase" height={imgHeight} objectFit="contain" width={imgWidth} />
-        </SkillCard>
-
         <SkillCard title="PostgreSQL" delay={9} textLeftAdjust="-0.6375rem">
           <StaticImage src="../images/logos/postgresql.svg" alt="PostgreSQL" height={imgHeight} objectFit="contain" width={imgWidth} />
+        </SkillCard>
+
+        <SkillCard title="AWS" delay={10}>
+          <StaticImage src="../images/logos/aws.svg" alt="AWS" height={imgHeight} objectFit="contain" width={imgWidth} />
         </SkillCard>
 
         <SkillCard title="Azure" delay={10}>
@@ -73,6 +73,11 @@ const SkillsSection = () => {
         <SkillCard title="GCE" delay={11}>
           <StaticImage src="../images/logos/google-cloud.svg" alt="Google Compute Engine" height={imgHeight} objectFit="contain" width={imgWidth} />
         </SkillCard>
+
+        <SkillCard title="Firebase" delay={8}>
+          <StaticImage src="../images/logos/firebase.svg" alt="Firebase" height={imgHeight} objectFit="contain" width={imgWidth} />
+        </SkillCard>
+
 
       </Grid>
     </Grid>

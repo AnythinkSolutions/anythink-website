@@ -13,17 +13,17 @@ const AboutSection = () => {
     <Grid container>
       <Grid item container direction="column" alignItems="center" mt={{sm: 6, xs: 2}} sx={{mb: 4}}>
         <Typography variant="h3" component="h3" color="primary" textAlign="center" fontWeight="400" mb={{xs: 1}}>Brian Schwalm</Typography>
-        <Typography variant="h3" component="h3" color="gray" textAlign="center" fontWeight="200" className="aos-init text-center" data-aos="fade">Freelance Software Developer</Typography>
+        <Typography variant="h3" component="h3" color="gray" textAlign="center" fontWeight="200" className="aos-init text-center" data-aos="fade">Freelance Software Architect &amp; Engineer</Typography>
       </Grid>
 
       <Grid item md={2} sm={4} container justifyContent={{sm: "flex-start", xs: "center"}}>
         <Box>    
           <Stack>
             <Typography variant="h6" sx={{color: 'info.main', fontWeight: 200, textTransform: 'uppercase'}} textAlign={{sm: "left", xs: "center"}}  gutterBottom>About Me</Typography>
-            <Typography textAlign={{sm: "left", xs: "center"}} >I'm a full-stack software developer. I love to build intuitive, user-friendly applications to solve complex problems. When I'm not coding, you'll find me traveling the world, camping in the wilderness or fly fishing in a mountain river.</Typography>
+            <Typography textAlign={{sm: "left", xs: "center"}} >I'm a software architect and full-stack developer. I love to build intuitive, user-friendly applications and systems to solve complex problems. When I'm not coding, you'll find me traveling the world, camping in the wilderness or fly fishing in a mountain river.</Typography>
 
             <Typography variant="h6" sx={{mt: 4, color: 'info.main', fontWeight: 200, textTransform: 'uppercase'}} textAlign={{sm: "left", xs: "center"}} gutterBottom>Contact Info</Typography>
-            <Typography textAlign={{sm: "left", xs: "center"}}>Boston, MA</Typography>
+            <Typography textAlign={{sm: "left", xs: "center"}}>Boulder, CO</Typography>
             <Typography textAlign={{sm: "left", xs: "center"}}>info@anythinksolutions.com</Typography>
             <Typography textAlign={{sm: "left", xs: "center"}}>+1.303.817.2927</Typography>
           </Stack>      
@@ -42,10 +42,10 @@ const AboutSection = () => {
         <Box>
           <Stack alignItems={{sm: "flex-end", xs: "center"}}>
             <Typography variant="h6" sx={{color: 'info.main', fontWeight: 200, textTransform: 'uppercase'}} textAlign={{sm: "right", xs: "center"}} gutterBottom>Years Experience</Typography>
-            <Typography variant="h2" textAlign={{sm: "right", xs: "center"}}>24</Typography>
+            <Typography variant="h2" textAlign={{sm: "right", xs: "center"}}>{(new Date()).getFullYear() - 1998}</Typography>
 
             <Typography variant="h6" sx={{mt: 4, color: 'info.main', fontWeight: 200, textTransform: 'uppercase'}} textAlign={{sm: "right", xs: "center"}} gutterBottom>Years Freelance</Typography>
-            <Typography variant="h2" textAlign={{sm: "right", xs: "center"}}>15</Typography>
+            <Typography variant="h2" textAlign={{sm: "right", xs: "center"}}>{(new Date()).getFullYear() - 2007}</Typography>
 
             {/* <Typography variant="h6" sx={{mt: 4, color: 'info.main', fontWeight: 200, textTransform: 'uppercase'}} gutterBottom>Satisfied Clients</Typography>
             <Typography variant="h2">100%</Typography> */}

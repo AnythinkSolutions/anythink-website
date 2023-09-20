@@ -156,8 +156,8 @@ const ContactSection = () => {
             <Grid item>
               <Typography variant="h5">My Home Base</Typography>
               <Typography variant="body1" sx={{fontSize: 22, fontWeight: 200}}>
-                Boston, MA<br/>
-                02129
+                Boulder, CO<br/>
+                80302
               </Typography>
             </Grid>
             <Grid item sx={{"& a": { marginRight: 1}}}>
